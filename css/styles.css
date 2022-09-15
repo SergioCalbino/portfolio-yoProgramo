@@ -97,25 +97,39 @@ span{
   border: 7px solid #FF8B8B;
 }
 
-.about {
-  background-color: #FFDEDE;
-  
+.grid-container {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  width: 100vw;
-  align-items: center;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: #FF8B8B;
+  padding: 10px;
 }
 
-.about img {
-  width: 100%;
-  grid-column: 1/5;
-}
-
-.about-info {
+.grid-container > div {
  
-  grid-column: 5/10;
-  padding: 3em;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
 }
+
+
+/* .about .tecnologias {
+ padding: 20px;
+}
+
+
+.tecnologias i {
+  font-size: 3em;
+ 
+} */
+
+
+
+/* .about-info {
+ 
+  grid-column: 2;
+  padding: 3em;
+} */
 
 .p {
   color: black
@@ -138,6 +152,10 @@ span{
 
 .about p{
   margin-bottom: 1em;
+}
+
+.about i {
+  width: 35%;
 }
 
 .portfolio {
@@ -226,6 +244,80 @@ span{
 .contact-heading h2 {
  font-size: 3em;
 }
+
+footer {
+  display: flex;
+ text-align: center;
+ justify-content: center;
+ align-items: flex-end;
+  height: 3rem;
+  background-color: #007cb9
+}
+
+
+.pie a  {
+  display: flex;
+  align-items: center;
+ justify-content: space-around;
+  font-size: 1.5em;
+}
+
+.contact {
+  width: 100vw;
+  color: #fff;
+  background-color: #191c32;
+
+}
+
+.contact-me {
+
+  width: 100vw;
+  padding: 5em;
+
+}
+
+.contact-me h2 {
+  display: flex;
+ justify-content: end;
+}
+
+.tecnologias {
+ padding: 10px;
+    display: flex;
+   justify-content: center;
+    width: 100vw;
+    color: #fff;
+    background-color: #191c32;
+  
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  margin-right: 2rem;
+  float: right;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
 
 
 
